@@ -1,10 +1,16 @@
 
 /* Styling variables  */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Bitter:wght@400;500;600;700;800&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+
+
 :root {
     --dark-purple-main:#5a13f2;
     --light-purple-main: #ab05f2;
     --dark-blue-font:#023e7d;
-    --default-font-family: "Segoe UI";
+    --default-font-family: 'Bitter', serif;
+    --header-font-family: 'Volkhov', serif;
+
     --light-gray-bgc: #F8F9FA;
 }
 
@@ -63,13 +69,9 @@ header{
     margin: 0 auto;
 }
 
-.col-md-2{
+.col-md-3{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.main-text{
-    margin-top: 4rem;
 }
 
 
@@ -77,17 +79,30 @@ header{
     width: 100%;
 }
 
-
-
 .jumbotron-container{
     height: 100vh;
     background-color: var(--light-gray-bgc);
 }
 
+.main-text{
+    margin-top: 4rem;
+    text-align: center;
+}
+
 .heading-middle{
     /* display: inline-block; */
-    font-size:45px;
-    margin: 10px 0;
+    font-size: 40px;
+    margin: 20px 0;
+    font-family: var(--default-font-family);
+    color: var(--dark-blue-font);
+   
+}
+
+.heading-small{
+    /* display: inline-block; */
+    font-size: 27px;
+    font-weight: 600;
+    margin: 20px 0;
     font-family: var(--default-font-family);
     color: var(--dark-blue-font);
    
@@ -96,10 +111,11 @@ header{
 .heading-tin-stay{
     /* display: inline-block; */
     font-size:95px;
-    margin: 0px 0;
+    margin: 0px auto;
     width: 500px;
-    height: 130px;
-    font-family: var(--default-font-family);
+    height: 160px;
+    font-family: var(--header-font-family);
+    letter-spacing: 7px;
     color: var(--dark-blue-font);
     
     /* Color */
@@ -116,7 +132,7 @@ header{
 
 .btn-jumbotron-full{
     margin-right: 20px;
-    padding: 13px 30px;
+    padding: 15px 35px;
     border: var(--dark-purple-main);
     color: white;
     font-weight: 600;
@@ -129,14 +145,8 @@ header{
     background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.border-gradient {
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-  }
-
 .btn-jumbotron{
-    padding: 10px 30px;
+    padding: 12px 35px;
     border: 3px solid var(--dark-purple-main);
     border-radius: 4px;
     background-color: transparent;
@@ -149,9 +159,10 @@ header{
 
 
 .profile-image-circle{
-    margin-top: 4rem;
-    padding: 8px 35px 27px 6px;
-    width: 390px;
+    margin: 4rem auto 0 auto;
+    /* padding: 8px 20px 24px 6px; */
+    padding: 5px; 
+    width: 395px;
     height: 365px;
     border-radius: 50%;
     background-size: cover;

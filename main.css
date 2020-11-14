@@ -1,8 +1,11 @@
 
 /* Styling variables  */
 :root {
+    --dark-purple-main:#5a13f2;
+    --light-purple-main: #ab05f2;
     --dark-blue-font:#023e7d;
     --default-font-family: "Segoe UI";
+    --light-gray-bgc: #F8F9FA;
 }
 
 body{
@@ -42,15 +45,125 @@ header{
 }
 
 .active{
-    background: #5a13f2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5a13f2,#ab05f2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,#5a13f2, #ab05f2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 3px solid #5a13f2;
 }
 
+
+
+/* Front page */
+
+.row{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.col-md-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-text{
+    margin-top: 4rem;
+}
+
+
+.w-100{
+    width: 100%;
+}
+
+
+
 .jumbotron-container{
     height: 100vh;
-    background-color: #F8F9FA;
+    background-color: var(--light-gray-bgc);
+}
+
+.heading-middle{
+    /* display: inline-block; */
+    font-size:45px;
+    margin: 10px 0;
+    font-family: var(--default-font-family);
+    color: var(--dark-blue-font);
+   
+}
+
+.heading-tin-stay{
+    /* display: inline-block; */
+    font-size:95px;
+    margin: 0px 0;
+    width: 500px;
+    height: 130px;
+    font-family: var(--default-font-family);
+    color: var(--dark-blue-font);
+    
+    /* Color */
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jumbotron-buttons{
+    margin-top: 2.5rem;
+}
+
+.btn-jumbotron-full{
+    margin-right: 20px;
+    padding: 13px 30px;
+    border: var(--dark-purple-main);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    /* border: 3px solid var(--dark-purple-main); */
+    border-radius: 4px;
+
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+
+.btn-jumbotron{
+    padding: 10px 30px;
+    border: 3px solid var(--dark-purple-main);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-blue-font);
+
+
+}
+
+
+.profile-image-circle{
+    margin-top: 4rem;
+    padding: 8px 35px 27px 6px;
+    width: 390px;
+    height: 365px;
+    border-radius: 50%;
+    background-size: cover;
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.profile-image{
+    /* padding: 10px; */
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background-size: cover;
 }

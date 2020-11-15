@@ -17,10 +17,6 @@ html{
     font-size: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
 
 body{
     margin: 0;
@@ -58,6 +54,10 @@ header{
     color: var(--dark-blue-font);
 }
 
+.nav-link{
+    text-decoration: none;
+    color: inherit;
+}
 
 
 .active{
@@ -68,17 +68,12 @@ header{
     -webkit-text-fill-color: transparent;
     border-bottom: 3px solid #5a13f2;
 }
-/* 
-.active{
-    color: var(--dark-purple-main);
-    border-bottom: 3px solid #5a13f2;
-} */
-
 
 
 /* ##################### */
-/* ### Home page ### */
+/* ### Common classes ### */
 /* ##################### */
+
 .centered-container-80{
     width: 80%;
     margin: 0 auto;
@@ -100,17 +95,33 @@ header{
     grid-column-gap: 50px;
 }
 
-
 .w-100{
     width: 100%;
 }
 
 .light-gray-container{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--light-gray-bgc);
     padding: 1.8rem 0;
 }
 
+.purple-gradient-border-bottom{
+    margin: 7px 0;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.center-element{
+    margin: 0 auto;
+}
+
+
+/* ##################### */
+/* ### Home page ### */
+/* ##################### */
 .main-text{
     margin: 1.8rem auto 0 auto;
     text-align: center;
@@ -137,7 +148,7 @@ header{
 .heading-smaller{
     font-size: 1.3rem;
     font-weight: 500;
-    margin: 10px 0 0 0 ;
+    margin: 5px 0 0 0 ;
     color: var(--dark-blue-font);
 }
 
@@ -274,13 +285,31 @@ header{
 /* ### Projects view page ### */
 /* ##################### */
 
-.project-view-container{
-
+.project-detail-container{
+    background-color: #fff;
+    padding: 20px 40px;
+    /* margin: 0 auto; */
 }
 
-.heading-project-view{
+.heading-project-detail{
     font-size: 2rem;
     margin: 0 0 0rem 0;
     font-weight: 600;
     color: var(--dark-blue-font);
 }
+
+.project-detail-desc{
+    /* margin: 0px 0 60px 0; */
+    margin: 50px 80px 50px 0;
+
+}
+
+.project-detail-preview{
+    margin: 50px 80px 50px 0;
+}
+
+.pdf-viewer{
+    width: 100%;
+    height: 500px;
+}
+

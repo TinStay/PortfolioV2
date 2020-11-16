@@ -140,7 +140,7 @@ header{
     /* display: inline-block; */
     font-size: 1.3rem;
     font-weight: 600;
-    margin: 17px 0 0 0 ;
+    margin: 17px 0 0 0;
     color: var(--dark-blue-font);
    
 }
@@ -185,6 +185,8 @@ header{
     font-size: 1rem;
     /* border: 3px solid var(--dark-purple-main); */
     border-radius: 4px;
+    text-decoration: none;
+
 
     background: var(--dark-purple-main);  /* Default color */
     background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
@@ -199,7 +201,7 @@ header{
     font-size: 1rem;
     font-weight: 600;
     color: var(--light-purple-main);
-
+    text-decoration: none;
 
 }
 
@@ -215,6 +217,11 @@ header{
     background: var(--dark-purple-main);  /* Default color */
     background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-box-shadow: 5px 5px 15px 5px #DDA0DD; 
+    box-shadow: 5px 5px 15px 5px #DDA0DD;
+
+
 }
 
 .profile-image{

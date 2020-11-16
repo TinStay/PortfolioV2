@@ -12,6 +12,19 @@
     --light-gray-bgc: #F8F9FA;
 }
 
+.blue-font{
+    color: blue;
+    
+}
+
+.center-vertically{
+    margin: auto 0;
+}
+
+.dark-blue-font{
+    color: var(--dark-blue-font);
+}
+
 html{
     font-family: var(--default-font-family);
     font-size: 20px;
@@ -26,6 +39,8 @@ body{
 header{
     border-bottom: 1px solid rgb(240, 240, 240);
 }
+
+
 
 .navbar{
     display: flex;
@@ -84,6 +99,10 @@ header{
     margin: 0 auto;
 }
 
+.diplay-flex{
+    display: flex;
+}
+
 .two-column-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -123,7 +142,7 @@ header{
 /* ### Home page ### */
 /* ##################### */
 .main-text{
-    margin: 1.8rem auto 0 auto;
+    margin: 1.8rem auto 3rem auto;
     text-align: center;
 }
 
@@ -355,4 +374,48 @@ footer{
     height: 40px;
 }
 
+
+/* ##################### */
+/* ### Contact me page ### */
+/* ##################### */
+
+.heading-contact{
+    font-size: 2rem;
+    /* width: 80%; */
+    margin: 0 auto 2.3rem auto;
+    font-weight: 600;
+    color: var(--dark-blue-font);
+}
+
+.contact-info{
+    width: 90%;
+}
+
+
+.contact-info-details{
+    /* font-size: 1.1rem; */
+    /* width: 80%; */
+    margin: 0 auto 2.3rem auto;
+    font-weight: 500;
+    color: var(--dark-blue-font);
+    
+}
+
+
+.contact-info-row{
+    font-size: 1rem;
+    margin: 27px auto;
+}
+
+.contact-info-icon{
+    /* color: var(--dark-blue-font); */
+    /* color: var(--light-purple-main); */
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     font-size: 1.8rem;
+    margin-right: 13px;
+}
 

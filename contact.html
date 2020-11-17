@@ -14,9 +14,9 @@
                 <a href="homepage.html"><img class="logo" src="./Media/logo.png" alt="logo"></a>
             </div>
             <ul class="nav-items">
-                <li class="nav-item active"><a class="nav-link" href="homepage.html">About me</a></li>
+                <li class="nav-item "><a class="nav-link" href="homepage.html">About me</a></li>
                 <li class="nav-item "><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact me</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact me</a></li>
             </ul>
         </div>
     </header>
@@ -26,7 +26,7 @@
         <div class="centered-container-80 ">
             <h1 class="heading-contact">Contact </h1>
             <div class="two-column-grid ">
-                <div class="contact-info">
+                <div class="contact-info-container">
                     <h3 class="heading-smaller">Get in touch with me</h3>
                     <div class="purple-gradient-border-bottom"></div>
                    <div class="contact-info-details">
@@ -85,23 +85,25 @@
                     
                    </div> 
                 </div>
-                <div class="contact-form">
-                    <h3 class="heading-smaller">Description</h3>
+                <div class="contact-form-container">
+                    <h3 class="heading-smaller">Send me a message</h3>
                     <div class="purple-gradient-border-bottom"></div>
-                    <form action="">
+                    <form class="contact-form" action="">
                         <div class="contact-form-field">
-                            <label >Name *</label>
-                            <input type="text" placeholder="Enter you name"/>
+                            <label class="contact-form-label">Name *</label>
+                            <input class="contact-form-input" name="email-input" type="text" placeholder="Enter your name"/>
                         </div>
                         <div class="contact-form-field">
-                            <label >Email *</label>
-                            <input type="email" placeholder="Enter you email"/>
+                            <label class="contact-form-label">Email *</label>
+                            <input class="contact-form-input" name='email-input' type="email" placeholder="Enter your email"/>
                         </div>
                         <div class="contact-form-field">
-                            <label >Message *</label>
-                            <input type="textbox" placeholder="Enter you name"/>
+                            <label class="contact-form-label">Message *</label>
+                            <textarea class="contact-form-input" name="message-input" placeholder="Enter your message"></textarea>
                         </div>
-                        
+                        <div class="btn-submit">
+                            <a href="#" class="btn-jumbotron-full">Send</a>
+                        </div>
                     </form>
                 </div>
                

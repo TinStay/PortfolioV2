@@ -387,8 +387,10 @@ footer{
     color: var(--dark-blue-font);
 }
 
-.contact-info{
-    width: 90%;
+.contact-info-container{
+
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -415,7 +417,51 @@ footer{
     background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-     font-size: 1.8rem;
+    font-size: 1.8rem;
     margin-right: 13px;
+}
+
+.contact-form-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form{
+
+}
+
+.contact-form-field{
+    padding: 30px 0 0 0 ;
+}
+
+.contact-form-label{
+  
+    font-weight: 500;
+    color: var(--dark-blue-font);
+}
+
+.contact-form-input{
+    width: 100%;
+    max-width: 90%;
+    display: block;
+    padding: 7px 10px;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--dark-blue-font);
+    border-radius: 4px;
+    border: 2px solid var(--dark-purple-main);
+    
+}
+
+textarea{
+    resize: none;
+    height: 6rem;
+}
+
+.btn-submit{
+    position: relative;
+    float: right;
+    margin: 40px 5px;
+    /* margin: 20px auto; */
 }
 

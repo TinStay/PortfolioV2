@@ -25,6 +25,8 @@
     color: var(--dark-blue-font);
 }
 
+
+
 html{
     font-family: var(--default-font-family);
     font-size: 20px;
@@ -316,6 +318,7 @@ header{
 .project-detail-container{
     background-color: #fff;
     padding: 20px 40px;
+    border-radius: 10px;
     /* margin: 0 auto; */
 }
 
@@ -379,10 +382,16 @@ footer{
 /* ### Contact me page ### */
 /* ##################### */
 
+.contact-white-container{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
 .heading-contact{
     font-size: 2rem;
     /* width: 80%; */
-    margin: 0 auto 2.3rem auto;
+    margin: 0 auto 1.5rem auto;
     font-weight: 600;
     color: var(--dark-blue-font);
 }
@@ -391,13 +400,12 @@ footer{
 
     width: 80%;
     margin: 0 auto;
+    
 }
 
 
 .contact-info-details{
-    /* font-size: 1.1rem; */
-    /* width: 80%; */
-    margin: 0 auto 2.3rem auto;
+    margin: 1.5rem auto 2.3rem auto;
     font-weight: 500;
     color: var(--dark-blue-font);
     
@@ -406,7 +414,7 @@ footer{
 
 .contact-info-row{
     font-size: 1rem;
-    margin: 27px auto;
+    margin: 0px auto 25px auto;
 }
 
 .contact-info-icon{
@@ -427,16 +435,20 @@ footer{
 }
 
 .contact-form{
-
+    margin-top: 1.5rem;
+    padding-top: 0.2rem ;
 }
 
+
+
 .contact-form-field{
-    padding: 30px 0 0 0 ;
+    padding: 0px 0 30px 0 ;
 }
 
 .contact-form-label{
   
     font-weight: 500;
+    /* font-size: 0.9rem; */
     color: var(--dark-blue-font);
 }
 
@@ -446,22 +458,31 @@ footer{
     display: block;
     padding: 7px 10px;
     margin-top: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--dark-blue-font);
     border-radius: 4px;
     border: 2px solid var(--dark-purple-main);
-    
+    -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 textarea{
     resize: none;
-    height: 6rem;
+    height: 8rem;
+    
+}
+
+.contact-form-input:focus,  textarea:focus{
+    border: 2px solid red;
+    outline: none;
+    border: 2px solid var(--light-purple-main);
 }
 
 .btn-submit{
     position: relative;
     float: right;
-    margin: 40px 5px;
+    margin:25px 5px;
+    /* padding: 20px; */
     /* margin: 20px auto; */
 }
 

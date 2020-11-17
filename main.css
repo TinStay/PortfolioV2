@@ -17,6 +17,10 @@
     
 }
 
+.text-decoration-none{
+    text-decoration: none;
+}
+
 .center-vertically{
     margin: auto 0;
 }
@@ -36,6 +40,7 @@ html{
 body{
     margin: 0;
     padding: 0;
+    font-family: var(--default-font-family);
 }
 
 header{
@@ -52,23 +57,29 @@ header{
 }
 
 .logo{
-    width: 60x;
-    height: 60px;
+    width: 75x;
+    height: 75px;
 }
 
 .nav-items{
     display: flex;
-    margin-top: 5px;
 }
 
 .nav-item{
-    margin: 10px 50px 0px 50px;
-    padding-bottom: 4px;
+    margin: 2px 50px 0px 50px;
+    padding-bottom: 0px;
     font-size: 1rem;
     font-weight: bold;
     list-style: none;
     
     color: var(--dark-blue-font);
+    
+}
+
+.nav-item:hover{
+    transition: 0.2s ease-in-out;
+    
+    color: var(--dark-purple-main);
 }
 
 .nav-link{
@@ -319,7 +330,7 @@ header{
     background-color: #fff;
     padding: 20px 40px;
     border-radius: 10px;
-    /* margin: 0 auto; */
+    border: 1px solid rgb(233, 233, 233);
 }
 
 .heading-project-detail{
@@ -344,38 +355,6 @@ header{
     height: 500px;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    /* border-top: 1px solid #023047; */
-    background: var(--dark-purple-main);  /* Default color */
-    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.footer-container{
-    width: 80%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.left-side{
-    color: black;
-    font-size: 0.8rem ;
-}
-
-.right-side{
-    margin: auto 0;
-}
-
-.footer-icon{
-    margin: 0 20px;
-    width: 40px;
-    height: 40px;
-}
 
 
 /* ##################### */
@@ -386,6 +365,7 @@ footer{
     background-color: #fff;
     padding: 20px 40px;
     border-radius: 10px;
+    border: 1px solid rgb(233, 233, 233);
 }
 
 .heading-contact{
@@ -397,7 +377,6 @@ footer{
 }
 
 .contact-info-container{
-
     width: 80%;
     margin: 0 auto;
     
@@ -437,6 +416,7 @@ footer{
 .contact-form{
     margin-top: 1.5rem;
     padding-top: 0.2rem ;
+    
 }
 
 
@@ -461,18 +441,19 @@ footer{
     font-size: 0.8rem;
     color: var(--dark-blue-font);
     border-radius: 4px;
-    border: 2px solid var(--dark-purple-main);
-    -webkit-transition: 0.5s;
-  transition: 0.5s;
+    border: 2px solid rgb(204, 203, 206);
+    font-family: var(--default-font-family);
 }
 
 textarea{
     resize: none;
     height: 8rem;
-    
+    font-family: var(--default-font-family);
 }
 
 .contact-form-input:focus,  textarea:focus{
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     border: 2px solid red;
     outline: none;
     border: 2px solid var(--light-purple-main);
@@ -481,8 +462,99 @@ textarea{
 .btn-submit{
     position: relative;
     float: right;
-    margin:25px 5px;
-    /* padding: 20px; */
-    /* margin: 20px auto; */
+    margin:0px 20px 15px 20px;
+    padding: 15px 35px;
+    border: var(--dark-purple-main);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));
 }
 
+.contact-smp-icons{
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icon{
+    height: 60px;
+    
+    /* margin-right: 20px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################### */
+/* ### Footer ### */
+/* ##################### */
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* border-top: 1px solid #023047; */
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-side{
+    color: #03045e;
+    font-size: 0.9rem;
+}
+
+.small-icon{
+    font-size: 1.1rem;
+}
+
+.right-side{
+    margin: auto 0;
+}
+
+.footer-link{
+    color: #03045e;
+}
+
+.footer-icon{
+    font-size: 2.3rem;
+    color: #03045e;
+    margin: 0 20px;
+    /* margin: 0 20px; */
+    /* width: 40px;
+    height: 40px; */
+}
+
+.footer-icon:hover{
+    font-size: 2.3rem;
+    color: #03057a;
+    /* margin: 0 20px; */
+    /* width: 40px;
+    height: 40px; */
+}

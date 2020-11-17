@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+
 :root {
     --dark-purple-main:#5a13f2;
     --light-purple-main: #ab05f2;
     --dark-blue-font:#023e7d;
     --default-font-family: 'Montserrat', serif;
-    --header-font-family: 'Noto Serif', serif;
+    --header-font-family: 'Roboto Slab', cursive;
     --light-gray-bgc: #F8F9FA;
 }
 
@@ -241,7 +244,7 @@ header{
 .profile-image-circle{
     margin: 3rem auto 0 auto;
     /* padding: 8px 20px 24px 6px; */
-    padding: 5px; 
+    padding: 4px; 
     width: 365px;
     height: 335px;
     border-radius: 50%;
@@ -250,8 +253,8 @@ header{
     background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    -webkit-box-shadow: 5px 5px 15px 5px #DDA0DD; 
-    box-shadow: 5px 5px 15px 5px #DDA0DD;
+    -webkit-box-shadow: 1px 5px 15px 5px rgb(199, 199, 199); 
+    box-shadow: 1px 5px 15px 5px rgb(199, 199, 199);
 
 
 }
@@ -531,7 +534,7 @@ footer{
 }
 
 .small-icon{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .right-side{
@@ -546,15 +549,8 @@ footer{
     font-size: 2.3rem;
     color: #03045e;
     margin: 0 20px;
-    /* margin: 0 20px; */
-    /* width: 40px;
-    height: 40px; */
 }
 
 .footer-icon:hover{
-    font-size: 2.3rem;
     color: #03057a;
-    /* margin: 0 20px; */
-    /* width: 40px;
-    height: 40px; */
 }

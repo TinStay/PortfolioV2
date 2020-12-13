@@ -48,20 +48,24 @@ body{
 
 header{
     border-bottom: 1px solid rgb(240, 240, 240);
+    
 }
-
-
 
 .navbar{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: flex-end;
+    width: 80%; 
     margin: 5px auto 0 auto;
 }
 
 .logo{
-    width: 75x;
-    height: 75px;
+    /* margin: 0 0 5px 0; */
+    width: 55x;
+    height: 55px;
+}
+
+.navbar-nav{
+    height: inherit;
 }
 
 .nav-items{
@@ -70,24 +74,27 @@ header{
 
 .nav-item{
     margin: 2px 50px 0px 50px;
-    padding-bottom: 0px;
+    padding: 7px 0;
     font-size: 1rem;
     font-weight: bold;
     list-style: none;
-    
-    color: var(--dark-blue-font);
-    
+    border-bottom: 3px solid transparent;
+    color: var(--dark-blue-font) !important;
 }
 
 .nav-item:hover{
-    transition: 0.2s ease-in-out;
-    
-    color: var(--dark-purple-main);
+    transition: 0.1s ease-in-out;
+    border-bottom: 3px solid #5a13f2;
+    background: var(--dark-purple-main);  /* Default color */
+    background: -webkit-linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main));  /* Color for supporter browsers: Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--dark-purple-main), var(--light-purple-main)); /* Color for supporter browsers: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-link{
     text-decoration: none;
-    color: inherit;
+    color: inherit !important;
 }
 
 

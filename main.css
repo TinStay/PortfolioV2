@@ -52,14 +52,11 @@ header{
 }
 
 .navbar{
-    display: flex;
-    justify-content: flex-end;
     width: 80%; 
     margin: 5px auto 0 auto;
 }
 
 .logo{
-    /* margin: 0 0 5px 0; */
     width: 55x;
     height: 55px;
 }
